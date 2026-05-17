@@ -47,7 +47,7 @@ class MaximoMCPClient:
 
     async def connect_to_server(self):
         server_params = StdioServerParameters(
-            command="python",
+            command=sys.executable,
             args=["maximo_mcp_server.py"],
             env=None
         )

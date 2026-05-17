@@ -7,7 +7,7 @@ load_dotenv()
 
 class MaximoClient:
     def __init__(self):
-        self.base_url = os.getenv("MAXIMO_BASE_URL")
+        self.base_url = st.secrets["MAXIMO_BASE_URL"]
         #self.api_key = os.getenv("MAXIMO_API_KEY")
         self.api_key = st.secrets["API_KEY"]
         self.headers = {
